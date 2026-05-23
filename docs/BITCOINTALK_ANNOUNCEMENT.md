@@ -8,7 +8,7 @@
 
 ## Recommended Thread Title
 
-`[PRE-ANN][LGN] LegacyNote - no-premine CryptoNote-style fair launch from Monero codebase`
+`[PRE-ANN][LGN] LegacyNote - no-premine Monero-codebase fair launch`
 
 Use `PRE-ANN` while LegacyNote is in the whitepaper and public-review stage. Do not switch to `ANN` until public testnet or mainnet release artifacts justify it.
 
@@ -96,6 +96,14 @@ The founder is not asking for permanent control or special restrictions on other
 The founder may also build independent tools after public launch, under the same rules as everyone else. Such tools must not receive private launch access, protocol-level fees, hidden fees, official default donation streams, or special gatekeeping power.
 
 Independent tools may ask for voluntary support, but any support mechanism should be transparent and opt-in. Default-on mining donations are not part of the LegacyNote launch plan.
+
+[hr]
+
+[b]Development disclosure[/b]
+
+LegacyNote used AI-assisted coding and documentation workflows. No launch claim depends on trusting any AI system. The source, build process, genesis state, supply constants, activation guard, release hashes, and launch timeline must be independently verifiable.
+
+If the community rejects AI-authored or AI-assisted materials, credible community maintainers may take over, rewrite, fork, or replace those materials before testnet or mainnet while preserving the no-extraction fair-launch principles.
 
 [hr]
 
