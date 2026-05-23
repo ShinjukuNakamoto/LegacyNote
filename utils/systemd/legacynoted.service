@@ -1,0 +1,20 @@
+[Unit]
+Description=LegacyNote Full Node
+After=network-online.target
+
+[Service]
+User=legacynote
+Group=legacynote
+WorkingDirectory=~
+StateDirectory=legacynote
+LogsDirectory=legacynote
+
+Type=simple
+ExecStart=/usr/bin/legacynoted --config-file /etc/legacynoted.conf --non-interactive
+StandardOutput=null
+StandardError=null
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
