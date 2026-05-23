@@ -45,6 +45,18 @@ The approximate generated supply before the first tail block is:
 
 These figures should be regenerated from source before any public release candidate.
 
+## Source-Level Verification
+
+The first public-review verifier is `utils/verify_launch_constants.py`.
+
+Run from the repository root:
+
+```sh
+python utils/verify_launch_constants.py
+```
+
+It checks the selected supply constants, derived tail reward, proposed activation timestamp, zero-output genesis transaction blob, and source-level activation guard hooks. This is not a substitute for builds, runtime tests, release hashes, or chain-state proof.
+
 ## Review Notes
 
 The supply design intentionally avoids scarcity framing. The important public claims are:

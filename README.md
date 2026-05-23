@@ -69,6 +69,18 @@ LegacyNote uses a deliberately selected Monero-style emission contract, not an i
 
 The reference supply is not a hard cap because tail emission continues indefinitely. LegacyNote uses 11 display decimals so the selected reference supply fits Monero's existing `uint64_t` amount type. The selected constants still need build verification and a reproducible public supply table before any mainnet release candidate.
 
+## First Verification Artifact
+
+The first source-level verifier is available at `utils/verify_launch_constants.py`.
+
+Run:
+
+```bash
+python utils/verify_launch_constants.py
+```
+
+It checks the selected supply constants, derived tail reward, proposed activation timestamp, zero-output genesis transaction blob, and source-level activation guard hooks. See `docs/VERIFY_LAUNCH_CONSTANTS.md` for scope and limits.
+
 ## Zero Premine
 
 The genesis transaction is configured with no outputs. The chain validation path special-cases height `0` so the genesis miner transaction is valid only when it has:
@@ -102,8 +114,7 @@ For reproducible release work, use the pinned source tree, clean build environme
 
 - [Whitepaper](docs/LEGACYNOTE_WHITEPAPER.md)
 - [Supply](docs/SUPPLY.md)
-- [Pseudonymous operations](docs/PSEUDONYMOUS_OPERATIONS.md)
-- [Bitcointalk initial post draft](docs/BITCOINTALK_ANNOUNCEMENT.md)
+- [Launch constants verifier](docs/VERIFY_LAUNCH_CONSTANTS.md)
 - [Launch process](docs/LAUNCH_PROCESS.md)
 - [Fair launch checklist](docs/FAIR_LAUNCH_CHECKLIST.md)
 - [Release checklist](docs/RELEASE_CHECKLIST.md)

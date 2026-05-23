@@ -122,3 +122,11 @@ __pycache__/
 # Local project memory; do not publish
 /memorybase/
 /docs/project-dashboard/
+
+# Local-only public-post and operations drafts; do not publish
+/docs/BITCOINTALK_ANNOUNCEMENT.md
+/docs/PSEUDONYMOUS_OPERATIONS.md
+
+# Local draft brand assets; do not publish before founder approval
+/docs/assets/brand/
+/docs/assets/brand-drafts/
